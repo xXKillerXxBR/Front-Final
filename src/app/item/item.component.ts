@@ -8,8 +8,8 @@ import { Tarefa } from "../tarefa";
   styleUrl: './item.component.css'
 })
 export class ItemComponent {
-  emEdicao = false;
+  emEdicao =false;
   @Input() tarefa: Tarefa = new Tarefa("", false);
-  @Output() Remover = new EventEmitter();
+  @Output() removeTarefa = new EventEmitter();
   @Output() modificaTarefa = new EventEmitter();
 }
